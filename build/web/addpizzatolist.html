@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Add Pizza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <form action="AddPizza" method="post">
+        <h1>Add Pizza</h1>
+        <label for="pizzacode">Unique Code for Pizza:</label>
+        <input type="text" id="pizzacode" name="pizzacode" required>
+        
+        <label for="pizzaname">Name for Pizza:</label>
+        <input type="text" id="pizzaname" name="pizzaname" required>
+        
+        <label for="pizzaprice">Price of Pizza:</label>
+        <input type="text" id="pizzaprice" name="pizzaprice" required>
+        
+        <label for="pizzadiscount">Discount for Pizza:</label>
+        <input type="text" id="pizzadiscount" name="pizzadiscount" required>
+        
+        <input type="submit" value="Add Pizza">
+    </form>
+</body>
+</html>
